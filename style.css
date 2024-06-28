@@ -1,0 +1,407 @@
+/* header */
+
+.masthead {
+  height: 25em;
+  background-image: url("https://images.unsplash.com/photo-1431964309058-439dca4d5388?crop=entropy&dpr=1.1&fit=crop&fm=jpg&h=875&ixjsv=2.1.0&ixlib=rb-0.3.5&q=75&w=1750");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 2em;
+  border-top: solid #3D5467 1em;
+  text-align: center;
+}
+
+.name {
+  margin: 0;
+  -webkit-animation: animate 1s ease-in-out infinite;
+          animation: animate 1s ease-in-out infinite; 
+} 
+
+/* 設定跳動方向 */ 
+@-webkit-keyframes animate { 
+  0% { 
+    transform: translateY(0px); 
+  } 
+  20% {
+    transform: translateY(-20px); 
+  } 
+  40%, 100% {
+    transform: translateY(0px); 
+  } 
+} 
+@keyframes animate { 
+  0% { 
+    transform: translateY(0px); 
+  } 
+  20% {
+    transform: translateY(-20px); 
+  } 
+  40%, 100% {
+    transform: translateY(0px); 
+  } 
+}
+
+
+/* middle sections */
+
+.introduction,
+.where-im-from,
+.more-about-me,
+.content-footer p,
+.content-footer ul {
+  max-width: 35em;
+  margin-right: auto;
+  margin-left: auto;
+}
+.Image,{
+  max-width:25em;
+}
+
+.introduction > h1,
+.where-im-from > h1,
+.more-about-me > h1,
+.introduction > h2,
+.where-im-from > h2,
+.more-about-me > h2 {
+  margin-top: 2em;
+}
+
+
+/* footer */
+
+.content-footer {
+  padding: 3em 0;
+  background: #DCEDFF;
+  text-align: center;
+}
+
+.content-footer ul {
+  margin: auto;
+  padding: 0;
+}
+
+.content-footer li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 1em;
+}
+
+
+/*typography styles */
+
+body {
+  color: #222222;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:visited {
+  color: #00818F;
+}
+
+a:hover,
+a:focus {
+  color: #00DCF5;
+}
+
+.masthead {
+  font-family: Georgia, serif;
+  font-size: 2em;
+}
+
+.masthead,
+.content-footer > p {
+  color: #EAF0CE;
+   text-shadow: -5px 5px 5px #686963;
+}
+
+.name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: #78CDD7;
+  letter-spacing: -0.03em;
+  text-shadow: -6px 6px 6px #125F68;
+  text-transform: uppercase;
+}
+
+a,
+.introduction > h2,
+.where-im-from > h2,
+.more-about-me > h2 {
+  color: #3D5467;
+  text-shadow: -1px 1px 1px #686963;
+}
+
+.introduction > h2,
+.where-im-from > h2,
+.more-about-me > h2 {
+  font-family: Georgia, serif;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+body {
+  background: #e6e6e6;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/*===== Vertical Timeline =====*/
+#conference-timeline {
+  position: relative;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+}
+#conference-timeline .timeline-start,
+#conference-timeline .timeline-end {
+  display: table;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: #3D5467;
+  padding: 15px 23px;
+  color: #fff;
+  max-width: 5%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+#conference-timeline .conference-center-line {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  background: #3D5467;
+  z-index: -1;
+}
+#conference-timeline .conference-timeline-content {
+  padding-top: 67px;
+  padding-bottom: 67px;
+}
+.timeline-article {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.timeline-article .content-left-container,
+.timeline-article .content-right-container {
+  max-width: 44%;
+  width: 100%;
+}
+.timeline-article .timeline-author {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #242424;
+  text-align: right;
+}
+.timeline-article .content-left,
+.timeline-article .content-right {
+  position: relative;
+  width: auto;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.03);
+  padding: 27px 25px;
+}
+.timeline-article p {
+  margin: 0 0 0 60px;
+  padding: 0;
+  font-weight: 400;
+  color: #242424;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+}
+.timeline-article p span.article-number {
+  position: absolute;
+  font-weight: 300;
+  font-size: 44px;
+  top: 10px;
+  left: -60px;
+  color: #00b0bd;
+}
+.timeline-article .content-left-container {
+  float: left;
+}
+.timeline-article .content-right-container {
+  float: right;
+}
+.timeline-article .content-left:before,
+.timeline-article .content-right:before{
+  position: absolute;
+  top: 20px;
+  font-size: 23px;
+  font-family: "FontAwesome";
+  color: #fff;
+}
+.timeline-article .content-left:before {
+  content: "\f0da";
+  right: -8px;
+}
+.timeline-article .content-right:before {
+  content: "\f0d9";
+  left: -8px;
+}
+.timeline-article .meta-date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  margin-left: -31px;
+  color: #fff;
+  border-radius: 100%;
+  background: #00b0bd;
+}
+.timeline-article .meta-date .date,
+.timeline-article .meta-date .month {
+  display: block;
+  text-align: center;
+  font-weight: 900;
+}
+.timeline-article .meta-date .date {
+  font-size: 30px;
+  line-height: 40px;
+}
+.timeline-article .meta-date .month {
+  font-size: 18px;
+  line-height: 10px;
+}
+/*===== // Vertical Timeline =====*/
+
+/*===== Resonsive Vertical Timeline =====*/
+@media only screen and (max-width: 830px) {
+  #conference-timeline .timeline-start,
+  #conference-timeline .timeline-end {
+    margin: 0;
+  }
+  #conference-timeline .conference-center-line {
+    margin-left: 0;
+    left: 50px;
+  }
+  .timeline-article .meta-date {
+    margin-left: 0;
+    left: 20px;
+  }
+  .timeline-article .content-left-container,
+  .timeline-article .content-right-container {
+    max-width: 100%;
+    width: auto;
+    float: none;
+    margin-left: 110px;
+    min-height: 53px;
+  }
+  .timeline-article .content-left-container {
+    margin-bottom: 20px;
+  }
+  .timeline-article .content-left,
+  .timeline-article .content-right {
+    padding: 10px 25px;
+    min-height: 65px;
+  }
+  .timeline-article .content-left:before {
+    content: "\f0d9";
+    right: auto;
+    left: -8px;
+  }
+  .timeline-article .content-right:before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .timeline-article p {
+    margin: 0;
+  }
+  .timeline-article p span.article-number {
+    display: none;
+  }
+  
+}
+/*===== // Resonsive Vertical Timeline =====*/
+/*------------------------------------------------------------------
+      						RESET STYLES
+-------------------------------------------------------------------*/
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {	
+	display: inline-block;
+	text-decoration: none;
+}
+
+/*------------------------------------------------------------------
+      						SECTION STYLES
+-------------------------------------------------------------------*/
+
+section { 
+    margin: 50px 0;
+}
+
+section ul {
+	text-align: center;
+}
+
+section a {
+	padding: 7px;
+    color: black;
+}
+
+section a:not(:first-child) {
+	margin-left: 20px;
+}
+
+section i {
+	vertical-align: middle;
+	transition: color .3s ease-in-out;	
+}
+
+section a:nth-child(1):hover i {
+	color: #3B5998;
+}
+
+section a:nth-child(2):hover i {
+	color: #4099FF;
+}
+
+section a:nth-child(3):hover i {
+	color: #007bb6;
+}
+
+section a:nth-child(4):hover i {
+	color: #ccc;
+}
+
+section a:nth-child(5):hover i {
+	color: steelblue;
+}
+
+.p {
+  text-align: center;
+  margin-top: 20px;
+}
+.preview {
+  background:#EAFDF8;
+  width:550px;
+  height:auto;
+  text-align:center;
+}
+.preview img{
+  height:320px;
+  order:1;
+  vertical-align : middle;
+}
